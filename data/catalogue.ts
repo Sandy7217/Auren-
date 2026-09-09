@@ -1,0 +1,10 @@
+export type Product={slug:string;name:string;price:number;category:string;image:string;secondary:string;tag?:string;description:string};
+const img=(id:string)=>`https://images.unsplash.com/${id}?auto=format&fit=crop&w=1200&q=85`;
+export const products:Product[]=[
+{slug:'the-sculpted-blouse',name:'The Sculpted Blouse',price:7490,category:'Tops',tag:'New',image:img('photo-1539109136881-3be0616acf4b'),secondary:img('photo-1529139574466-a303027c1d8b'),description:'A modern blouse cut with purposeful structure and a softened, easy finish.'},
+{slug:'the-after-hours-dress',name:'The After Hours Dress',price:10990,category:'Dresses',tag:'New',image:img('photo-1515372039744-b8f02a3ae446'),secondary:img('photo-1525507119028-ed4c629a60a3'),description:'Fluid lines and a considered silhouette for moments that call for more.'},
+{slug:'the-rose-atelier-set',name:'The Rose Atelier Set',price:13490,category:'Co-ord Sets',image:img('photo-1483985988355-763728e1935b'),secondary:img('photo-1496217590455-aa63a8350eea'),description:'A two-piece expression of ease, designed to wear together or apart.'},
+{slug:'the-column-trouser',name:'The Column Trouser',price:6990,category:'Trousers',image:img('photo-1469334031218-e382a71b716b'),secondary:img('photo-1496747611176-843222e1e57c'),description:'A long, clean trouser with subtle tailoring and a timeless proportion.'},
+{slug:'the-portrait-shirt',name:'The Portrait Shirt',price:6490,category:'Shirts',image:img('photo-1551488831-00ddcb6c6bd3'),secondary:img('photo-1515886657613-9f3515b0c78f'),description:'A precise shirt with an expressive collar and softly relaxed volume.'},
+{slug:'the-studio-jacket',name:'The Studio Jacket',price:12490,category:'Jackets & Layers',image:img('photo-1534528741775-53994a69daeb'),secondary:img('photo-1517841905240-472988babdf9'),description:'A versatile outer layer, finished with thoughtful tailoring details.'}];
+export const categories=['New Arrivals','Western Wear','Indo-Western','Tops','Shirts','Dresses','Co-ord Sets','Trousers','Jackets & Layers'];
